@@ -22,6 +22,8 @@ Follow this for the setup https://mycroft.ai/documentation/skills/introduction-d
 ### We have used another padatious intent for finding instructions to make the recipe.
 ### This makes API call to Rapid API to get instructions to make the recipe.
 ### Once we get the response, MyCroft will speak out the instructions to make the recipe.
+### Integrated the skill with the Mycroft Mark-1 device in real time
+
 
 # References : 
 https://github.com/MycroftAI/mycroft-skills
