@@ -32,14 +32,6 @@ class KitchenSkill(MycroftSkill):
     def handle_recipe_ingredients_intent(self, message):
         self.get_recipe_for_dish(message)
 
-    # def get_recipe_by_ingredients(self, message):
-    #     self.speak_dialog("looking.up.dish.now", expect_response = True)
-
-    # @intent_handler(IntentBuilder('IngredientsToRecipeIntent')
-    #                 .require('Question'))
-    # def handle_ingredients_to_recipe_intent(self, message):
-    #     self.get_recipe_by_ingredients(message)
-
     def get_instructions_for_recipe(self, message):
         find_recipe_id_url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query={}'
         find_recipe_instructions_url = 'https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/{}/information'
