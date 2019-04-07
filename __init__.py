@@ -83,12 +83,15 @@ class KitchenSkill(MycroftSkill):
             return None
         elif substitute_resp.status_code == 200:
             substitute_resp = substitute_resp.json()
-            substitutes = substitute_resp['substitutes']
-            substitutes_list = []
-            for sub in substitutes:
-                substitutes_list.append(sub.split("=")[-1].strip())
-            self.speak(substitute_resp['message'] + " and they are " + " or ".join(substitutes_list))
-
+            substitutes_present = 'substitutes' in substitute_resp
+            if substitutes_present:
+                substitutes = substitute_resp['substitutes']
+                substitutes_list = []
+                for sub in substitutes:
+                    substitutes_list.append(sub.split("=")[-1].strip())
+                self.speak(substitute_resp['message'] + " and they are " + " or ".join(substitutes_list))
+            else:
+                self.speak(substitute_resp['message'])
 
     @intent_file_handler("substitute.intent")
     def handle_substitute_intent(self, message):
