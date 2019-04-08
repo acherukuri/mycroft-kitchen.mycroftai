@@ -36,3 +36,8 @@ https://github.com/acherukuri/mycroft-kitchen.mycroftai
 
 # Youtube link
 https://youtu.be/OMid4knw2GI
+
+Ambience Creator Skill Link
+---
+
+[Click here to go to the Ambience creator skill (White noise skill)](https://github.com/acherukuri/mycroft-white-noise.mycroftai)
