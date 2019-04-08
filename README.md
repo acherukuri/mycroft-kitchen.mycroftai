@@ -24,7 +24,6 @@ Follow this for the setup https://mycroft.ai/documentation/skills/introduction-d
 ### Once we get the response, MyCroft will speak out the instructions to make the recipe.
 ### Integrated the skill with the Mycroft Mark-1 device in real time
 
-
 # References : 
 https://github.com/MycroftAI/mycroft-skills
 
@@ -36,3 +35,4 @@ https://developer.edamam.com/edamam-recipe-api
 https://github.com/acherukuri/mycroft-kitchen.mycroftai
 
 # Youtube link
+https://youtu.be/OMid4knw2GI
